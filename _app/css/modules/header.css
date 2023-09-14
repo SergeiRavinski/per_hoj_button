@@ -12,8 +12,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 3rem;
-	height: 1.5rem;
+	width: 2.5rem;
+	height: 1rem;
 	color: var(--primary-dark);
 }
 
@@ -28,7 +28,21 @@ header {
 }
 
 .header__logo {
-	width: 3rem;
+	width: 2.5rem;
 	height: 100%;
-	background: url(/_app/assets/icons/earth_icon.svg) center / 3rem no-repeat;
+	background: url(/_app/assets/icons/earth_icon.svg) center / 2.5rem no-repeat;
+	animation: rotate360 10s linear infinite;
+}
+
+.header__logo:hover {
+	animation-play-state: paused;
+}
+
+@keyframes rotate360 {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
