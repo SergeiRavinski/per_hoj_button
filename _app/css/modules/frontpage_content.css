@@ -1,0 +1,118 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main__text {
+	width: 40rem;
+	margin-top: 2rem;
+}
+
+.main__text h1 {
+	font-size: var(--large-text-size);
+}
+
+.main__text p {
+	margin-top: 1rem;
+	font-size: var(--small-text-size);
+	color: var(--secondary-dark);
+}
+
+.main__images {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	width: 100%;
+	height: 40rem;
+	margin: 1rem 0;
+	gap: 0.7rem;
+}
+
+.main__images img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.main__images img:nth-of-type(1) {
+	grid-area: 1 / 1 / 3 / 3;
+}
+
+.main__images img:nth-of-type(2) {
+	grid-area: 1 / 3 / 2 / 4;
+}
+
+.main__images img:nth-of-type(3) {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.main__images img:nth-of-type(4) {
+	grid-area: 1 / 4 / 2 / 6;
+}
+
+.main__images img:nth-of-type(5) {
+	grid-area: 1 / 6 / 2 / 7;
+}
+
+.main__images img:nth-of-type(6) {
+	grid-area: 2 / 4 / 3 / 7;
+	overflow: hidden;
+}
+
+.main__button {
+	display: flex;
+	justify-content: center;
+}
+
+.main__button-line {
+	display: flex;
+	align-self: center;
+	margin: 2rem;
+	width: 3rem;
+	height: 0.1rem;
+	background: var(--primary-dark);
+	animation: move_lines 3s linear infinite;
+}
+
+@keyframes move_lines {
+	0% {
+		margin: 0 2rem;
+		opacity: 0.35;
+	}
+	50% {
+		margin: 0 3rem;
+		opacity: 0.1;
+	}
+	100% {
+		margin: 0 2rem;
+		opacity: 0.35;
+	}
+}
+
+.main__button button {
+	position: relative;
+	margin: 1.5rem 0;
+	padding: 0.7rem 5rem;
+	font-size: var(--medium-text-size);
+	overflow: hidden;
+}
+
+.main__button-icon {
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url(../../assets/icons/airplane_icon.svg) center / 1.5rem
+		no-repeat;
+	transition: all 0.4s ease-in-out;
+	opacity: 0;
+}
+
+.main__button button:hover .main__button-icon {
+	left: 2rem;
+	opacity: 1;
+	transition: all 0.4s ease-in-out;
+}
