@@ -1,0 +1,34 @@
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 3rem;
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.header__hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 3rem;
+	height: 1.5rem;
+	color: var(--primary-dark);
+}
+
+.header__hamburger-menu div {
+	width: 100%;
+	height: 0.15rem;
+	background: var(--primary-dark);
+}
+
+.header__hamburger-menu :nth-child(2) {
+	width: 65%;
+}
+
+.header__logo {
+	width: 3rem;
+	height: 100%;
+	background: url(/_app/assets/icons/earth_icon.svg) center / 3rem no-repeat;
+}
