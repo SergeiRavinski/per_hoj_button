@@ -1,22 +1,12 @@
 body {
 	font-family: var(--primary-font-family);
+	max-width: 80rem;
 	margin: 0 auto;
 	font-weight: 400;
 	font-style: normal;
 	-webkit-font-smooting: anititial;
 	animation: fade 0.3s ease-in-out;
-}
-
-main {
-	margin: var(--gap-navigation) var(--gap-body-row) var(--gap-padding) var(--gap-body-row);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 5%;
-}
-
-.main--invisible {
-	display: none;
+	color: var(--primary-dark);
 }
 
 @keyframes fade {
@@ -28,12 +18,12 @@ main {
 	}
 }
 
-@media screen and (min-width: 1920px) {
-	body, 
+/*@media screen and (min-width: 1920px) {
+	body,
 	.body__popup {
 		max-width: 1920px;
 		margin: 0 auto;
-	}	
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -41,7 +31,7 @@ main {
 		margin: var(--gap-navigation-mobile) var(--gap-navigation);
 		flex-direction: column;
 	}
-}	
+}
 
 @media screen and (max-width: 600px) {
 	main {
@@ -49,4 +39,4 @@ main {
 		display: flex;
 		flex-direction: column;
 	}
-}	
+}*/

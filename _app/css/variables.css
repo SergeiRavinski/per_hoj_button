@@ -9,25 +9,10 @@
 	--mobile-small-text-size: 0.64rem;
 	--mobile-extra-small-text-size: 0.512rem;
 
-	--primary-dark: #19647E;
-	--secondary-dark: #2B4141;
-	--tertiary-dark: #6C757D;
-	--primary-light: #FFFFFF;
-	--secondary-light: #F0F5F8;
-	--tertiary-light: #dfe7ec;
-	--quaternary-light: #c8d7e0;
-
-	--primary-dark-transparent: rgba(0, 5, 8, 0.4);
-	--secondary-dark-transparent: rgba(0, 5, 8, 0.6);
-	--tertiary-dark-transparent: rgba(16, 50, 70, 0.3);
-	--primary-light-transparent: rgba(255, 255, 255, 0.8);
-
-	--primary-dark-loader: #ff4d505e;
-	--secondary-dark-loader: #ff0004;
-	
-	--gap-frontpage: 0.3rem;
-
-	--border-radius: 0.2rem;
+	--primary-dark: #454545;
+	--secondary-dark: #545f5f;
+	--primary-light: #ffffff;
+	--secondary-light: #f0f5f8;
 
 	--primary-font-family: 'Roboto', sans-serif;
 }
