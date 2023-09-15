@@ -1,3 +1,3 @@
-import Header from './modules/header.js';
+import FrontPage from './modules/front_page.js';
 
-Header();
+FrontPage();
