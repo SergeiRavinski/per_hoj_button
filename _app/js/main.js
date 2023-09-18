@@ -1,3 +1,3 @@
-import FrontPage from './modules/front_page.js';
+import Popup from './modules/popup.js';
 
-FrontPage();
+Popup();
