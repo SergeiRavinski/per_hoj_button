@@ -15,4 +15,16 @@ export default async function Popup() {
 		openPopup();
 		renderHTML();
 	}
+
+	function getRandomIndex() {
+		randomIndex = Math.floor(Math.random() * countries.length);
+	}
+
+	function openPopup() {
+		frontpage.style.display = frontpage.style.display = 'block'
+			? 'none'
+			: 'block';
+		popup.style.display = popup.style.display = 'none' ? 'block' : 'none';
+	}
+
 }
