@@ -7,4 +7,12 @@ export default async function Popup() {
 	const popup = document.querySelector('.main__popup');
 
 	let randomIndex = 0;
+
+	generateButton.addEventListener('click', handleChooseCountryButtonClick);
+
+	function handleChooseCountryButtonClick() {
+		getRandomIndex();
+		openPopup();
+		renderHTML();
+	}
 }
