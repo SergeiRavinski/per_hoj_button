@@ -1,5 +1,7 @@
 # The "Explore Europe" button
 
+![Screenshot of the website](/_app/assets/images/screenshot_per_hoj_button.png)
+
 ## About the project
 
 The "Explore Europe" button is a webapplication which allows users to generate a random country to visit. The "Explore Europe" contains the front page and popup.
