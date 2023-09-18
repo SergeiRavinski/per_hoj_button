@@ -1,5 +1,5 @@
 :root {
-	--large-text-size: 1.563rem;
+	--large-text-size: 1.8rem;
 	--medium-text-size: 1.25rem;
 	--small-text-size: 1rem;
 	--extra-small-text-size: 0.8rem;
@@ -10,7 +10,7 @@
 	--mobile-extra-small-text-size: 0.512rem;
 
 	--primary-dark: #454545;
-	--secondary-dark: #545f5f;
+	--secondary-dark: #667070;
 	--primary-light: #ffffff;
 	--secondary-light: #f0f5f8;
 
