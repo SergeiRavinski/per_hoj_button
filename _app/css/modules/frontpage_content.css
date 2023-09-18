@@ -96,6 +96,21 @@ main {
 	padding: 0.7rem 5rem;
 	font-size: var(--medium-text-size);
 	overflow: hidden;
+	transform: translateY(+5vh);
+	animation: float_button_up 300ms ease-in-out 300ms;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes float_button_up {
+	0% {
+		transform: translateY(+5vh);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .main__button-icon {
