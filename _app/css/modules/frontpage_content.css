@@ -2,10 +2,11 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: relative;
 }
 
 .main__text {
-	width: 40rem;
+	max-width: 40rem;
 	margin-top: 2rem;
 }
 
@@ -96,7 +97,7 @@ main {
 	padding: 0.7rem 5rem;
 	font-size: var(--medium-text-size);
 	overflow: hidden;
-	transform: translateY(+5vh);
+	transform: translateY(+3vh);
 	animation: float_button_up 300ms ease-in-out 300ms;
 	opacity: 0;
 	animation-fill-mode: forwards;
@@ -104,7 +105,7 @@ main {
 
 @keyframes float_button_up {
 	0% {
-		transform: translateY(+5vh);
+		transform: translateY(+3vh);
 		opacity: 0;
 	}
 	100% {
@@ -130,4 +131,21 @@ main {
 	left: 2rem;
 	opacity: 1;
 	transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+	.main__images {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main__button button {
+		position: fixed;
+		bottom: 1rem;
+		margin: 1.5rem 0;
+		padding: 0.5rem 2rem;
+		color: var(--primary-light);
+		background-color: var(--primary-dark);
+		border-radius: 0.3rem;
+	}
 }
