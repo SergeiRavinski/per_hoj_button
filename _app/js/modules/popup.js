@@ -109,4 +109,11 @@ export default async function Popup() {
 		);
 		countryCurrencyContainer.append(countryCurrencyH3, countryCurrencyH4);
 	}
+
+	function handleClosePopupButtonClick() {
+		frontpage.style.display = frontpage.style.display = 'none'
+			? 'block'
+			: 'none';
+		popup.style.display = popup.style.display = 'block' ? 'none' : 'block';
+	}
 }
