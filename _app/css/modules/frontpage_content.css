@@ -134,18 +134,29 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+	.main__text {
+		margin-top: 0.5rem;
+	}
+
 	.main__images {
 		display: flex;
 		flex-direction: column;
 	}
 
+	.main__button-line {
+		display: none;
+	}
+
 	.main__button button {
 		position: fixed;
-		bottom: 1rem;
-		margin: 1.5rem 0;
-		padding: 0.5rem 2rem;
+		bottom: 0;
+		margin: 0.5rem 0.5rem;
+		width: 95.5%;
+		padding: 0.7rem 1rem;
+		font-size: var(--small-text-size);
 		color: var(--primary-light);
-		background-color: var(--primary-dark);
+		background-color: var(--tertiary-dark);
 		border-radius: 0.3rem;
+		backdrop-filter: blur(1rem);
 	}
 }

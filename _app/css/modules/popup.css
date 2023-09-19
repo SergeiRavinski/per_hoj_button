@@ -5,9 +5,9 @@
 .main__popup-title-close {
 	display: flex;
 	width: 100%;
-	height: 4rem;
+	height: 100%;
 	justify-content: space-between;
-	margin-top: 2rem;
+	margin: 1rem 0;
 }
 
 .main__popup-title-close div h1 {
@@ -39,7 +39,7 @@
 .main__popup-information div div {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .main__popup-information div div h3 {
@@ -69,6 +69,10 @@
 }
 
 @media screen and (max-width: 600px) {
+	.main__popup-title-close {
+		margin-top: 0.5rem;
+	}
+
 	.main__popup-context {
 		flex-direction: row;
 	}
@@ -80,6 +84,11 @@
 
 	.main__popup-information {
 		width: 100%;
+		padding-top: 1rem;
+	}
+
+	.main__popup-information p {
+		margin-top: 1rem;
 	}
 
 	.main__popup-image {
